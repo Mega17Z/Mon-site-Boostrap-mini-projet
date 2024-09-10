@@ -1,0 +1,543 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+}
+
+.entete h2{
+    color: rgb(221, 184, 0);
+    font-family: "Nerko One", cursive;
+}
+
+/* -----Header----- */
+.header nav{
+    border-bottom: 1px solid rgb(221, 184, 0);
+}
+
+.header .navbar .navbar-brand{
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.navbar .navbar-brand span{
+    color: rgb(221, 184, 0);
+}
+
+.icone a{
+    background-color: rgb(221, 184, 0);
+    font-size: 14px;
+    color: rgb(28, 28, 28);
+}
+
+.icone i{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: rgb(28, 28, 28);
+    border: 1px solid rgb(28, 28, 28);
+}
+
+.navbar-nav .nav-link{
+    position: relative;
+    color: rgb(221, 184, 0);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.nav-link:hover:before{
+    width: 100%;
+}
+
+/* ----banner---- */
+.banner .carousel-item{
+    height: 95vh;
+    position: relative;
+}
+
+.banne .annonce{
+    z-index: 2;
+}
+
+.banne .inscripte a{
+    background-color: rgb(221, 184, 0);
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 18px;
+}
+
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(24, 24, 24, 0.500);
+    z-index: 1;
+}
+
+.carousel-caption{
+    top: 10rem;
+    z-index: 2;
+}
+
+.carousel-caption h1,
+.annonce h1{
+    font-size: 5rem;
+    font-family: "Nerko One", cursive;
+    margin-bottom: 16px;
+    color: rgb(221, 184, 0);
+}
+
+.carousel-caption p,
+.annonce p{
+    font-size: 1.2rem;
+}
+
+/* ----Services---- */
+#services .card{
+    border-radius: 0;
+}
+
+#services .card img{
+    border-radius: 0;
+    max-height: 35vh;
+    object-fit: cover;
+}
+
+#services .card a{
+    color: rgb(221, 184, 0);
+    text-decoration: none;
+    border-radius: 0;
+}
+
+#services .card .btn{
+    color: rgb(221, 184, 0);
+    background-color: rgb(28, 28, 28);
+}
+
+#services .btn{
+    background-color: rgb(221, 184, 0);
+    color: rgb(28, 28, 28);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* ----A Propos---- */
+#propos a{
+    text-align: center;
+    color: rgb(221, 184, 0);
+}
+
+/* ----Contact---- */
+#contact form input{
+    border-radius: 0;
+    height: 8vh;
+}
+
+#contact textarea{
+    border-radius: 0;
+    min-height: 150px;
+    height: 100%;
+}
+
+#contact a{
+    width: 8rem;
+    margin: auto;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgb(221, 184, 0);
+    color: rgb(28, 28, 28);
+}
+
+/* ----footer---- */
+.footer h4{
+    margin: 1rem 0;
+    color: rgb(221, 184, 0);
+    position: relative;
+}
+
+.footer h4::before{
+    content: '';
+    position: absolute;
+    width: 4rem;
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: white;
+}
+
+.footer p{
+    font-size: 11px;
+}
+
+.footer .social-media i{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(221, 184, 0);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: rgb(221, 184, 0);
+}
+
+.footer .navbar-nav i{
+    margin-right: 10px;
+    color: rgb(221, 184, 0);
+}
+
+.footer .subscribe input{
+    border-radius: 0;
+}
+
+.subscribe .btn{
+    background-color: rgb(221, 184, 0);
+}
+
+/* ---Liste Produit---- */
+.liste .bt{
+    color: rgb(221, 184, 0);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.liste form{
+    padding-left: 2rem;
+}
+
+.liste form i{
+    position: absolute;
+    font-size: 18px;
+    left: 5px;
+    color: rgb(28, 28, 28);
+}
+
+.liste form input{
+    border: 0;
+    border-radius: 0;
+}
+
+.liste .offcanvas-title span,
+.liste .offcanvas-header .btn-close{
+    color: rgb(221, 184, 0);
+}
+
+.liste .offcanvas-body i{
+    width: 2px;
+    height: 30px;
+    border: 1px solid rgb(221, 184, 0);
+    margin-right: 15px;
+}
+
+.liste .container-fluid{
+    margin-top: 5rem;
+}
+
+.liste .nav .nav-link{
+    color: white;
+}
+
+.liste .card,
+.liste .card-img-top{
+    border-radius: 0;
+}
+
+.liste .card .card-text{
+    margin-bottom: 5px;
+}
+
+.liste .card .btn{
+    background-color: rgb(221, 184, 0);
+}
+
+.liste a i{
+    color: rgb(221, 184, 0);
+}
+
+.liste .card-title{
+    font-size: 16px;
+}
+
+.liste .card h6{
+    font-size: 14px;
+}
+
+.liste .card img{
+    max-height: 28vh;
+    object-fit: cover;
+}
+
+.liste .card s{
+    opacity: 0.6;
+}
+
+.note i{
+    color: rgb(221, 184, 0);
+    font-size: 13px;
+}
+
+.liste .voir{
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* ----Inscription---- */
+.inscripte h1{
+    color: rgb(221, 184, 0);
+}
+
+.inscription form label{
+    color: rgb(28, 28, 28);
+}
+
+.inscription form input{
+    border-radius: 0;
+    height: 7vh;
+    border: 1px solid rgb(221, 184, 0);
+}
+
+.inscription form .confidentialité{
+    height: 2.8vh;
+}
+
+.inscription .ins-button a{
+    padding: 10px 18px;
+    border-radius: 0;
+    background-color: rgb(28, 28, 28);
+    color: white;
+}
+
+.footer-special h6{
+    color: rgb(221, 184, 0);
+}
+
+.footer-special p{
+    font-size: 13px;
+}
+
+.footer-special .copy{
+    color: rgb(221, 184, 0);
+}
+
+/* ----Connexion---- */
+.connexion{
+    height: 100vh;
+    width: 100%;
+    flex-grow: 1 1 auto;
+}
+
+.img-connect{
+    background-image: url(Images/conect-compte.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.img-connect::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.600);
+}
+
+.img-connect h2{
+    color: rgb(251, 251, 251);
+    z-index: 2;
+    font-size: 4rem;
+}
+
+.connexion h3{
+    color: rgb(221, 184, 0);
+}
+
+.connexion input{
+    border-radius: 0;
+    border: 1px solid rgb(221, 184, 0);
+}
+
+.connexion .btn{
+    background-color: rgb(221, 184, 0);
+    border-radius: 0;
+}
+
+/* ----compte---- */
+
+.compte .background{
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background-image: url(Images/conect-compte.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.600);
+}
+
+.background h1{
+    font-size: 4rem;
+    font-family: "Nerko One", cursive;
+}
+
+.compte .navbar{
+    border-top: 1px solid rgb(221, 184, 0);
+}
+
+.compte .navbar i{
+    color: white;
+    font-size: 15px;
+}
+
+.pro .fil img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 1px solid white;
+}
+
+.pro i{
+    color: rgb(221, 184, 0) !important;
+    font-size: 18px !important;
+}
+
+.produit{
+    margin-top: 13rem;
+}
+
+.produit .card{
+    border-radius: 0;
+    border: 0;
+}
+
+.produit .card img{
+    height: 28vh;
+    object-fit: cover;
+}
+
+.produit .details-small{
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+.produit .card .btn{
+    background-color: rgb(28, 28, 28);
+    border-radius: 0;
+}
+
+/* ----Details---- */
+.detail-produit h2{
+    font-family: "Nerko One", cursive;
+}
+
+.detail-produit h2 span{
+    color: rgb(221, 184, 0);
+    font-family: "Nerko One", cursive;
+    font-size: 1.2rem;
+}
+
+.informations h3,
+.prix h3,
+.present h3{
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.informations h3::before,
+.prix h3::before,
+.present h3::before{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: rgb(221, 184, 0);
+}
+
+.team-profil{
+    border-left: 2px solid rgb(221, 184, 0);
+    border-right: 1px solid rgb(221, 184, 0);
+}
+
+.team-profil h5{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.team-profil h6{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.team{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    position: relative;
+}
+
+.team img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(221, 184, 0);
+}
+
+.video video{
+    height: 70vh;
+    border: 1px solid;
+    width: 100%;
+    object-fit: cover;
+}
+
+.prix h4{
+    color: rgb(221, 184, 0);
+}
+
+.prix .star{
+    color: rgb(221, 184, 0);
+}
+
+.prix .vue{
+    opacity: 0.7;
+}
+
+.informations a{
+    border-radius: 0;
+    color: rgb(221, 184, 0);
+    font-size: 1.2rem;
+}
+
+.informations .team img{
+    filter: grayscale(85%);
+}
