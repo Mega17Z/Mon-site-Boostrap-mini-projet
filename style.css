@@ -109,6 +109,22 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 576px) {
+    .carousel-caption{
+        top: 2rem;
+        z-index: 2;
+    }
+    .carousel-caption h1,
+    .annonce h1{
+        font-size: 2.7rem;
+    }
+
+    .carousel-caption p,
+    .annonce p{
+        font-size: 1.2rem;
+    }
+}
+
 /* ----Services---- */
 #services .card{
     border-radius: 0;
@@ -404,6 +420,12 @@
     font-family: "Nerko One", cursive;
 }
 
+@media(max-width: 576px){
+    .background h1{
+        font-size: 2.5rem;
+    }
+}
+
 .compte .navbar{
     border-top: 1px solid rgb(221, 184, 0);
 }
@@ -506,6 +528,19 @@
     position: relative;
 }
 
+@media(max-width: 576px){
+    .team-profil h5{
+        font-size: 0.8rem;
+    }
+    .team-profil h6{
+        font-size: 0.6rem;
+    }
+    .team{
+        width: 75px;
+        height: 75px;
+    }
+}
+
 .team img{
     object-fit: cover;
     width: 100%;
@@ -519,6 +554,12 @@
     border: 1px solid;
     width: 100%;
     object-fit: cover;
+}
+
+@media(max-width: 576px){
+    .video video{
+        height: 50vh;
+    }
 }
 
 .prix h4{
