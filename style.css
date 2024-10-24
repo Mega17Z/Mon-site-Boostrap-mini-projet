@@ -129,6 +129,7 @@
 #services .card .btn{
     color: rgb(221, 184, 0);
     background-color: rgb(28, 28, 28);
+    /* border: 2px solid rgb(28, 28, 28); */
 }
 
 #services .btn{
