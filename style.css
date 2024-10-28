@@ -235,6 +235,10 @@
     align-items: center;
 }
 
+.liste .bt:hover{
+    color: whitesmoke;
+}
+
 .liste form{
     padding-left: 2rem;
 }
@@ -249,6 +253,18 @@
 .liste form input{
     border: 0;
     border-radius: 0;
+}
+
+
+@media (max-width: 576px){
+    .liste form{
+        width: 150px;
+        height: 2rem;
+    }
+
+    .liste form input{
+        height: 2rem;
+    }
 }
 
 .liste .offcanvas-title span,
